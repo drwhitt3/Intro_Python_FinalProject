@@ -26,8 +26,7 @@ class HangMan():
     def wordCheck(self, word, guesses, guess):
         #this function takes the word that was selected, the dictionary of guesses, and the user's guess
         #it will check the guess against the actual word and return the letters of the word that have been guessed
-        word_status = " "
-        i = 0
+        word_status = ""
         matches = 0
         for letter in word:
             if guesses[letter]:
